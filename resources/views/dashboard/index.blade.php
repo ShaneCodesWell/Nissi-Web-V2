@@ -10,7 +10,7 @@
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <!-- Left Content -->
-                <div class="space-y-8">
+                <div class="space-y-5">
                     <div
                         class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-200 animate-slide-up">
                         <span class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
@@ -18,13 +18,13 @@
                     </div>
 
                     <h1
-                        class="font-display text-6xl lg:text-7xl text-gray-900 leading-tight animate-slide-up delay-100">
+                        class="font-display text-4xl lg:text-7xl text-gray-900 leading-tight animate-slide-up delay-100">
                         Building the
                         <span class="gradient-text block">Digital Future</span>
                         You Deserve
                     </h1>
 
-                    <p class="text-xl text-gray-600 leading-relaxed max-w-xl animate-slide-up delay-200">
+                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl animate-slide-up delay-200">
                         We transform businesses with cutting-edge cloud
                         infrastructure, intelligent AI solutions, and
                         enterprise-grade security that scales with your
@@ -124,7 +124,7 @@
     </section>
 
     <!-- Trusted By Section -->
-    <section id="clients" class="py-16 border-y border-gray-200 bg-white">
+    <section id="clients" class="pt-8 pb-12 border-y border-gray-200 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <p class="text-center text-sm text-gray-500 font-semibold mb-12 uppercase tracking-wider">
                 Powering Innovation at Leading Companies
@@ -156,7 +156,7 @@
     </section>
 
     <!-- Solutions Section - Asymmetric Layout -->
-    <section id="solutions" class="py-32 bg-white relative overflow-hidden">
+    <section id="solutions" class="py-24 bg-white relative overflow-hidden">
         <div class="absolute top-0 right-0 w-1/3 h-full bg-linear-to-l from-blue-50/50 to-transparent"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
