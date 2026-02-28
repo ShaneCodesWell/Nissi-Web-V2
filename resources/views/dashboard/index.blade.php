@@ -1,498 +1,405 @@
 <x-layouts.app>
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 min-h-screen flex items-center overflow-hidden">
-        <!-- Animated Background Elements -->
-        <div class="absolute inset-0 grid-pattern"></div>
-        <div class="absolute top-20 right-10 w-72 h-72 bg-blue-400/20 blob"></div>
-        <div class="absolute bottom-20 left-10 w-96 h-96 bg-cyan-400/15 blob" style="animation-delay: -3s"></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Left Content -->
-                <div class="space-y-5">
-                    <div
-                        class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full border border-blue-200 animate-slide-up">
-                        <span class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
-                        <span class="text-blue-700 font-medium text-sm">Trusted by 500+ enterprises worldwide</span>
-                    </div>
-
-                    <h1
-                        class="font-display text-4xl lg:text-7xl text-gray-900 leading-tight animate-slide-up delay-100">
-                        Building the
-                        <span class="gradient-text block">Digital Future</span>
-                        You Deserve
-                    </h1>
-
-                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl animate-slide-up delay-200">
-                        We transform businesses with cutting-edge cloud
-                        infrastructure, intelligent AI solutions, and
-                        enterprise-grade security that scales with your
-                        ambitions.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row gap-4 animate-slide-up delay-300">
-                        <a href="#contact"
-                            class="group px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-lg transition flex items-center justify-center gap-2 shadow-lg shadow-blue-600/25">
-                            Start Your Journey
-                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
-                        </a>
-                        <a href="#solutions"
-                            class="px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 rounded-xl font-semibold text-lg transition border-2 border-gray-200 flex items-center justify-center gap-2">
-                            <i class="fas fa-play-circle text-blue-600"></i>
-                            Watch Demo
-                        </a>
-                    </div>
-
-                    <!-- Quick Stats -->
-                    <div class="flex gap-8 pt-8 animate-slide-up delay-400">
-                        <div>
-                            <div class="text-3xl font-bold text-gray-900 stat-number">
-                                99.99%
-                            </div>
-                            <div class="text-sm text-gray-600 font-medium">
-                                Uptime SLA
-                            </div>
-                        </div>
-                        <div class="border-l-2 border-gray-200 pl-8">
-                            <div class="text-3xl font-bold text-gray-900 stat-number">
-                                24/7
-                            </div>
-                            <div class="text-sm text-gray-600 font-medium">
-                                Support
-                            </div>
-                        </div>
-                        <div class="border-l-2 border-gray-200 pl-8">
-                            <div class="text-3xl font-bold text-gray-900 stat-number">
-                                10M+
-                            </div>
-                            <div class="text-sm text-gray-600 font-medium">
-                                Users Secured
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Visual - Modern Illustration -->
-                <div class="relative animate-scale-in delay-200">
-                    <div class="relative">
-                        <!-- Main Card -->
-                        <div class="glass rounded-3xl p-8 shadow-2xl border-2 border-white">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
-                                alt="Dashboard Analytics" class="rounded-2xl w-full" />
-
-                            <!-- Floating Cards -->
-                            <div class="absolute -top-6 -right-6 glass rounded-2xl p-4 shadow-xl animate-float">
-                                <div class="flex items-center gap-3">
-                                    <div
-                                        class="w-12 h-12 bg-linear-to-br from-green-400 to-emerald-500 rounded-xl flex items-center justify-center">
-                                        <i class="fas fa-chart-line text-white"></i>
-                                    </div>
-                                    <div>
-                                        <div class="text-xs text-gray-600 font-medium">
-                                            Performance
-                                        </div>
-                                        <div class="text-lg font-bold text-gray-900">
-                                            +47%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="absolute -bottom-6 -left-6 glass rounded-2xl p-4 shadow-xl animate-float"
-                                style="animation-delay: -2s">
-                                <div class="flex items-center gap-3">
-                                    <div
-                                        class="w-12 h-12 bg-linear-to-br from-blue-400 to-cyan-500 rounded-xl flex items-center justify-center">
-                                        <i class="fas fa-shield-alt text-white"></i>
-                                    </div>
-                                    <div>
-                                        <div class="text-xs text-gray-600 font-medium">
-                                            Security Score
-                                        </div>
-                                        <div class="text-lg font-bold text-gray-900">
-                                            98/100
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trusted By Section -->
-    <section id="clients" class="pt-8 pb-12 border-y border-gray-200 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="text-center text-sm text-gray-500 font-semibold mb-12 uppercase tracking-wider">
-                Powering Innovation at Leading Companies
+    <!-- ── HERO ── -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">IT Solutions & Services</span>
+            <h1 class="hero-h1">
+                Innovative<br />technology for<br /><em>modern business</em>
+            </h1>
+            <p class="hero-sub">
+                We are a forward-thinking technology company delivering innovative
+                solutions that power modern businesses — from robust POS Systems and
+                Cloud Infrastructure to remote work tools that keep you connected,
+                productive, and ahead of the competition.
             </p>
-            <div
-                class="flex flex-wrap justify-center items-center gap-12 opacity-40 hover:opacity-70 transition-opacity duration-500">
-                <div class="flex items-center gap-3 text-2xl font-bold text-gray-800">
-                    <i class="fa-brands fa-aws text-4xl"></i>
-                    <span>AWS</span>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-fill">Schedule a Demo</a>
+                <a href="#services" class="btn-ghost">Our services <span class="arrow">→</span></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400&q=85&auto=format&fit=crop"
+                alt="Modern corporate office" loading="eager" />
+            <div class="hero-card">
+                <div class="hero-stat">
+                    <div class="hero-stat-n">2<sup>+</sup></div>
+                    <div class="hero-stat-l">Companies served</div>
                 </div>
-                <div class="flex items-center gap-3 text-2xl font-bold text-gray-800">
-                    <i class="fa-brands fa-google text-4xl"></i>
-                    <span>Google</span>
+                <div class="hero-stat">
+                    <div class="hero-stat-n">99<sup>.9%</sup></div>
+                    <div class="hero-stat-l">Uptime guarantee</div>
                 </div>
-                <div class="flex items-center gap-3 text-2xl font-bold text-gray-800">
-                    <i class="fa-brands fa-microsoft text-4xl"></i>
-                    <span>Microsoft</span>
+                <div class="hero-stat">
+                    <div class="hero-stat-n">24<sup>/7</sup></div>
+                    <div class="hero-stat-l">Support coverage</div>
                 </div>
-                <div class="flex items-center gap-3 text-2xl font-bold text-gray-800">
-                    <i class="fa-brands fa-stripe text-4xl"></i>
-                    <span>Stripe</span>
+            </div>
+        </div>
+
+        <div class="hero-bar">
+            <div class="hero-bar-item">Google Workspace Partner</div>
+            <div class="hero-bar-item">Microsoft 365 Certified</div>
+            <div class="hero-bar-item">ISO 27001 Compliant</div>
+        </div>
+    </section>
+
+    <!-- ── LOGO BAR ── -->
+    <div class="logo-bar">
+        <span class="logo-bar-label">Trusted by</span>
+        <div class="logo-bar-divider"></div>
+        <div class="logo-bar-track">
+            <div class="logo-bar-inner">
+                <span class="logo-item">Safety Insurance Brokers</span>
+                <span class="logo-item">Vanguard Assurance</span>
+                {{-- <span class="logo-item">Zenith Payments</span> --}}
+                <span class="logo-item">Nissi ClockIn</span>
+                <span class="logo-item">Nissi POS</span>
+                <span class="logo-item">E-Claim Platform</span>
+                {{-- <span class="logo-item">Prism Data</span> --}}
+                {{-- <span class="logo-item">Northstar Group</span> --}}
+                <!-- duplicate for loop -->
+                <span class="logo-item">Safety Insurance Brokers</span>
+                <span class="logo-item">Vanguard Assurance</span>
+                {{-- <span class="logo-item">Zenith Payments</span> --}}
+                <span class="logo-item">Nissi ClockIn</span>
+                <span class="logo-item">Nissi POS</span>
+                <span class="logo-item">E-Claim Platform</span>
+                {{-- <span class="logo-item">Prism Data</span> --}}
+                {{-- <span class="logo-item">Northstar Group</span> --}}
+            </div>
+        </div>
+    </div>
+
+    <!-- ── ABOUT ── -->
+    <section class="about" id="about">
+        <div>
+            <div class="chip reveal">Who we are</div>
+            <h2 class="about-heading reveal r1">
+                Technology that <em>works</em> as hard as you do
+            </h2>
+        </div>
+        <div>
+            <p class="about-body reveal r1">
+                Nissi Technologies is a forward-thinking IT company built around one
+                belief: technology should <strong>simplify your business</strong>, not
+                complicate it. We deliver everything from secure email infrastructure
+                and custom software to cloud systems and network solutions — all
+                engineered to keep your team
+                <strong>connected, protected, and productive</strong>.
+            </p>
+            <div class="metric-grid reveal r2">
+                <div class="metric">
+                    <div class="metric-n">2<sup>+</sup></div>
+                    <div class="metric-l">Companies served</div>
                 </div>
-                <div class="flex items-center gap-3 text-2xl font-bold text-gray-800">
-                    <i class="fa-brands fa-slack text-4xl"></i>
-                    <span>Slack</span>
+                <div class="metric">
+                    <div class="metric-n">99<sup>.9%</sup></div>
+                    <div class="metric-l">Uptime SLA</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-n">6<sup>+</sup></div>
+                    <div class="metric-l">Years of expertise</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-n">24<sup>/7</sup></div>
+                    <div class="metric-l">Support & monitoring</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Solutions Section - Asymmetric Layout -->
-    <section id="solutions" class="py-24 bg-white relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-1/3 h-full bg-linear-to-l from-blue-50/50 to-transparent"></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="max-w-2xl mb-20 reveal">
-                <div class="inline-block px-4 py-2 bg-blue-50 text-blue-700 rounded-full font-semibold text-sm mb-6">
-                    Our Solutions
-                </div>
-                <h2 class="font-display text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
-                    Technology That
-                    <span class="gradient-text">Transforms</span>
-                </h2>
-                <p class="text-xl text-gray-600 leading-relaxed">
-                    Comprehensive solutions designed to accelerate your
-                    digital transformation journey.
+    <!-- ── SERVICES ── -->
+    <section class="services" id="services">
+        <div class="section-header reveal">
+            <h2 class="section-title">Our <em>services</em></h2>
+            <span class="section-meta">06 core offerings</span>
+        </div>
+        <div class="service-grid">
+            <div class="service-card reveal">
+                <div class="blue-line"></div>
+                <div class="svc-num">01</div>
+                <svg class="svc-icon" viewBox="0 0 40 40" fill="none">
+                    <rect x="4" y="10" width="32" height="22" rx="2" stroke="rgba(37,99,235,0.6)"
+                        stroke-width="1.5" />
+                    <line x1="4" y1="16" x2="36" y2="16" stroke="rgba(37,99,235,0.3)"
+                        stroke-width="1" />
+                    <path d="M12 24 L18 20 L24 24 L30 19" stroke="rgba(37,99,235,0.5)" stroke-width="1.5"
+                        fill="none" />
+                </svg>
+                <h3 class="svc-name">Email Services</h3>
+                <p class="svc-desc">
+                    Professional corporate email setup for Google Workspace, Microsoft
+                    365, and Zoho Mail. Secure, reliable, and fully customised to keep
+                    your business connected and professional.
                 </p>
+                <a href="#contact" class="svc-link">Learn more →</a>
             </div>
 
-            <!-- Solution Cards - Alternating Layout -->
-            <div class="space-y-24">
-                <!-- Cloud Infrastructure -->
-                <div class="grid lg:grid-cols-2 gap-12 items-center reveal">
-                    <div class="order-2 lg:order-1">
-                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
-                                alt="Cloud Infrastructure" class="w-full h-full object-cover parallax-img" />
-                            <!-- Overlay Badge -->
-                            <div
-                                class="absolute top-6 left-6 px-4 py-2 bg-white/90 backdrop-blur rounded-full text-sm font-semibold text-blue-600 flex items-center gap-2">
-                                <span class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
-                                Live Monitoring
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-1 lg:order-2 space-y-6">
-                        <div class="inline-flex items-center gap-3 px-4 py-2 bg-blue-100 rounded-xl">
-                            <i class="fas fa-cloud text-2xl text-blue-600"></i>
-                            <span class="font-semibold text-blue-900">Cloud Infrastructure</span>
-                        </div>
-                        <h3 class="font-display text-4xl text-gray-900 leading-tight">
-                            Scalable Cloud Architecture Built for Growth
-                        </h3>
-                        <p class="text-lg text-gray-600 leading-relaxed">
-                            Enterprise-grade cloud solutions that
-                            automatically scale with your business needs.
-                            Our infrastructure handles millions of requests
-                            per second with 99.99% uptime guaranteed.
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <div
-                                    class="w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                                    <i class="fas fa-check text-blue-600 text-sm"></i>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-gray-900">
-                                        Auto-scaling Infrastructure
-                                    </div>
-                                    <div class="text-gray-600 text-sm">
-                                        Automatically adjust resources based
-                                        on demand
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div
-                                    class="w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                                    <i class="fas fa-check text-blue-600 text-sm"></i>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-gray-900">
-                                        Global CDN Network
-                                    </div>
-                                    <div class="text-gray-600 text-sm">
-                                        Lightning-fast content delivery
-                                        worldwide
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <div
-                                    class="w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                                    <i class="fas fa-check text-blue-600 text-sm"></i>
-                                </div>
-                                <div>
-                                    <div class="font-semibold text-gray-900">
-                                        Cost Optimization
-                                    </div>
-                                    <div class="text-gray-600 text-sm">
-                                        Reduce infrastructure costs by up to
-                                        60%
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <a href="#contact"
-                            class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-all hover:gap-3">
-                            Explore Cloud Solutions
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="service-card reveal r1">
+                <div class="blue-line"></div>
+                <div class="svc-num">02</div>
+                <svg class="svc-icon" viewBox="0 0 40 40" fill="none">
+                    <rect x="6" y="6" width="12" height="12" stroke="rgba(37,99,235,0.6)"
+                        stroke-width="1.5" />
+                    <rect x="22" y="6" width="12" height="12" stroke="rgba(107,122,153,0.4)"
+                        stroke-width="1.5" />
+                    <rect x="6" y="22" width="12" height="12" stroke="rgba(107,122,153,0.4)"
+                        stroke-width="1.5" />
+                    <rect x="22" y="22" width="12" height="12" stroke="rgba(37,99,235,0.35)"
+                        stroke-width="1.5" />
+                </svg>
+                <h3 class="svc-name">Software Development</h3>
+                <p class="svc-desc">
+                    Powerful solutions including POS Platforms, Clock-In systems,
+                    Work-From-Home tools, and Workflow Management platforms — designed
+                    to streamline operations and adapt to your business needs.
+                </p>
+                <a href="#contact" class="svc-link">Learn more →</a>
+            </div>
 
-                <!-- AI & Machine Learning -->
-                <div class="grid lg:grid-cols-2 gap-12 items-center reveal">
-                    <div class="space-y-6">
-                        <div class="inline-flex items-center gap-3 px-4 py-2 bg-purple-100 rounded-xl">
-                            <i class="fas fa-brain text-2xl text-purple-600"></i>
-                            <span class="font-semibold text-purple-900">Artificial Intelligence</span>
-                        </div>
-                        <h3 class="font-display text-4xl text-gray-900 leading-tight">
-                            Intelligent AI Solutions That Learn and Adapt
-                        </h3>
-                        <p class="text-lg text-gray-600 leading-relaxed">
-                            Harness the power of machine learning and
-                            generative AI to automate complex workflows,
-                            predict outcomes, and unlock insights hidden in
-                            your data.
-                        </p>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
-                                <div class="text-3xl font-bold text-gray-900 mb-1">
-                                    10x
-                                </div>
-                                <div class="text-sm text-gray-600">
-                                    Faster Processing
-                                </div>
-                            </div>
-                            <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
-                                <div class="text-3xl font-bold text-gray-900 mb-1">
-                                    95%
-                                </div>
-                                <div class="text-sm text-gray-600">
-                                    Accuracy Rate
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#contact"
-                            class="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-xl font-semibold transition-all hover:gap-3">
-                            Discover AI Capabilities
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gray-100">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop"
-                            alt="AI Technology" class="w-full h-full object-cover parallax-img" />
-                        <!-- Overlay Stats -->
-                        <div class="absolute bottom-6 left-6 right-6 glass rounded-2xl p-4">
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <div class="text-sm text-gray-600 font-medium">
-                                        AI Models Trained
-                                    </div>
-                                    <div class="text-2xl font-bold text-gray-900">
-                                        1,247
-                                    </div>
-                                </div>
-                                <div
-                                    class="w-12 h-12 bg-linear-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-                                    <i class="fas fa-robot text-white"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="service-card reveal r2">
+                <div class="blue-line"></div>
+                <div class="svc-num">03</div>
+                <svg class="svc-icon" viewBox="0 0 40 40" fill="none">
+                    <rect x="4" y="8" width="32" height="22" rx="2" stroke="rgba(107,122,153,0.4)"
+                        stroke-width="1.5" />
+                    <line x1="14" y1="30" x2="12" y2="36" stroke="rgba(37,99,235,0.5)"
+                        stroke-width="1.5" />
+                    <line x1="26" y1="30" x2="28" y2="36" stroke="rgba(37,99,235,0.5)"
+                        stroke-width="1.5" />
+                    <line x1="10" y1="36" x2="30" y2="36" stroke="rgba(37,99,235,0.4)"
+                        stroke-width="1.5" />
+                    <circle cx="20" cy="19" r="4" stroke="rgba(37,99,235,0.6)" stroke-width="1.5" />
+                </svg>
+                <h3 class="svc-name">Website Development</h3>
+                <p class="svc-desc">
+                    Modern, responsive websites that showcase your brand and drive
+                    results. From sleek corporate sites to dynamic e-commerce platforms,
+                    we create online experiences that engage and convert.
+                </p>
+                <a href="#contact" class="svc-link">Learn more →</a>
+            </div>
 
-                <!-- Cybersecurity -->
-                <div class="grid lg:grid-cols-2 gap-12 items-center reveal">
-                    <div class="order-2 lg:order-1">
-                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-gray-100">
-                            <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=2068&auto=format&fit=crop"
-                                alt="Cybersecurity" class="w-full h-full object-cover parallax-img" />
-                            <!-- Security Badge -->
-                            <div
-                                class="absolute top-6 right-6 px-4 py-2 bg-emerald-500 rounded-full text-sm font-semibold text-white flex items-center gap-2">
-                                <i class="fas fa-shield-alt"></i>
-                                Protected 24/7
-                            </div>
-                        </div>
-                    </div>
-                    <div class="order-1 lg:order-2 space-y-6">
-                        <div class="inline-flex items-center gap-3 px-4 py-2 bg-emerald-100 rounded-xl">
-                            <i class="fas fa-shield-halved text-2xl text-emerald-600"></i>
-                            <span class="font-semibold text-emerald-900">Cybersecurity</span>
-                        </div>
-                        <h3 class="font-display text-4xl text-gray-900 leading-tight">
-                            Enterprise Security That Never Sleeps
-                        </h3>
-                        <p class="text-lg text-gray-600 leading-relaxed">
-                            Zero-trust architecture with real-time threat
-                            detection and automated response. We protect
-                            over 10 million users with military-grade
-                            encryption and compliance frameworks.
-                        </p>
-                        <div class="space-y-3">
-                            <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-200">
-                                <i class="fas fa-check-circle text-emerald-600 text-xl"></i>
-                                <span class="font-semibold text-gray-900">SOC 2 & ISO 27001 Certified</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-200">
-                                <i class="fas fa-check-circle text-emerald-600 text-xl"></i>
-                                <span class="font-semibold text-gray-900">Real-time Threat Intelligence</span>
-                            </div>
-                            <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-200">
-                                <i class="fas fa-check-circle text-emerald-600 text-xl"></i>
-                                <span class="font-semibold text-gray-900">24/7 Security Operations Center</span>
-                            </div>
-                        </div>
-                        <a href="#contact"
-                            class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-semibold transition-all hover:gap-3">
-                            Secure Your Infrastructure
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
+            <div class="service-card reveal">
+                <div class="blue-line"></div>
+                <div class="svc-num">04</div>
+                <svg class="svc-icon" viewBox="0 0 40 40" fill="none">
+                    <path d="M20 6 C10 6 6 12 6 18 C6 26 12 32 20 34 C28 32 34 26 34 18 C34 12 30 6 20 6Z"
+                        stroke="rgba(107,122,153,0.4)" stroke-width="1.5" fill="none" />
+                    <path d="M20 12 L20 20 L26 24" stroke="rgba(37,99,235,0.6)" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+                <h3 class="svc-name">Disaster Recovery</h3>
+                <p class="svc-desc">
+                    Cloud disaster recovery solutions that protect your business by
+                    securely backing up critical data and enabling rapid restoration
+                    after any disruption. Stay resilient and minimise downtime.
+                </p>
+                <a href="#contact" class="svc-link">Learn more →</a>
+            </div>
+
+            <div class="service-card reveal r1">
+                <div class="blue-line"></div>
+                <div class="svc-num">05</div>
+                <svg class="svc-icon" viewBox="0 0 40 40" fill="none">
+                    <circle cx="8" cy="20" r="4" stroke="rgba(37,99,235,0.6)" stroke-width="1.5" />
+                    <circle cx="32" cy="20" r="4" stroke="rgba(37,99,235,0.6)" stroke-width="1.5" />
+                    <circle cx="20" cy="8" r="4" stroke="rgba(107,122,153,0.4)" stroke-width="1.5" />
+                    <circle cx="20" cy="32" r="4" stroke="rgba(107,122,153,0.4)" stroke-width="1.5" />
+                    <line x1="12" y1="20" x2="28" y2="20" stroke="rgba(37,99,235,0.3)"
+                        stroke-width="1" />
+                    <line x1="20" y1="12" x2="20" y2="28" stroke="rgba(37,99,235,0.3)"
+                        stroke-width="1" />
+                </svg>
+                <h3 class="svc-name">Network Solutions</h3>
+                <p class="svc-desc">
+                    Reliable network solutions that keep your business connected,
+                    secure, and running at peak performance. From design and setup to
+                    monitoring and support, built for speed, stability, and scalability.
+                </p>
+                <a href="#contact" class="svc-link">Learn more →</a>
+            </div>
+
+            <div class="service-card reveal r2">
+                <div class="blue-line"></div>
+                <div class="svc-num">06</div>
+                <svg class="svc-icon" viewBox="0 0 40 40" fill="none">
+                    <path d="M8 32 L8 16 L20 8 L32 16 L32 32 Z" stroke="rgba(107,122,153,0.4)" stroke-width="1.5"
+                        fill="none" />
+                    <path d="M14 32 L14 22 L26 22 L26 32" stroke="rgba(37,99,235,0.5)" stroke-width="1.5"
+                        fill="none" />
+                    <circle cx="20" cy="17" r="3" stroke="rgba(37,99,235,0.6)" stroke-width="1.5" />
+                </svg>
+                <h3 class="svc-name">IT Consulting</h3>
+                <p class="svc-desc">
+                    Expert IT consulting to help you plan, implement, and optimise
+                    technology that drives your business forward. From strategy to
+                    execution, we deliver solutions tailored to your goals and growth.
+                </p>
+                <a href="#contact" class="svc-link">Learn more →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CLIENTS ── -->
+    <section class="cases" id="clients">
+        <div class="cases-header reveal">
+            <h2 class="cases-title">Trusted by <em>innovators</em></h2>
+            <a href="#contact" class="view-all">Work with us →</a>
+        </div>
+        <div>
+            <a href="#" class="case-row reveal">
+                <span class="cr-num">001</span>
+                <span class="cr-name">Safety Insurance Brokers — Email Infrastructure</span>
+                <span class="cr-tag">Email Services</span>
+                <span class="cr-year">2024</span>
+                <span class="cr-arr">→</span>
+            </a>
+            <a href="#" class="case-row reveal r1">
+                <span class="cr-num">002</span>
+                <span class="cr-name">Vanguard Assurance — Claim Platform</span>
+                <span class="cr-tag">Network</span>
+                <span class="cr-year">2026</span>
+                <span class="cr-arr">→</span>
+            </a>
+            <a href="#" class="case-row reveal r2">
+                <span class="cr-num">003</span>
+                <span class="cr-name">Nissi Technologies — CLockin and Attendance System</span>
+                <span class="cr-tag">Web Dev</span>
+                <span class="cr-year">2025</span>
+                <span class="cr-arr">→</span>
+            </a>
+            <a href="#" class="case-row reveal r3">
+                <span class="cr-num">004</span>
+                <span class="cr-name">Nissi Technologies — POS System</span>
+                <span class="cr-tag">Web Dev</span>
+                <span class="cr-year">2025</span>
+                <span class="cr-arr">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ── APPROACH / WHY US ── -->
+    <section class="approach" id="approach">
+        <div class="approach-left reveal">
+            <div class="chip">Why Nissi</div>
+            <h2 class="approach-title">How we <em>work</em></h2>
+            <p class="approach-copy">
+                A proven engagement model that delivers results from first
+                consultation to long-term support — built around how real businesses
+                operate.
+            </p>
+        </div>
+        <div>
+            <div class="step-row reveal">
+                <div class="step-num-col">
+                    <div class="step-n">01</div>
+                </div>
+                <div>
+                    <h3 class="step-title">Consultation & Discovery</h3>
+                    <p class="step-desc">
+                        We start with a free consultation to understand your business, map
+                        your current technology landscape, and identify where we can
+                        deliver the most immediate impact.
+                    </p>
+                </div>
+            </div>
+            <div class="step-row reveal r1">
+                <div class="step-num-col">
+                    <div class="step-n">02</div>
+                </div>
+                <div>
+                    <h3 class="step-title">Strategy & Planning</h3>
+                    <p class="step-desc">
+                        We design a tailored technology roadmap — not a generic package —
+                        built around your specific goals, budget, and the speed your
+                        business needs to move at.
+                    </p>
+                </div>
+            </div>
+            <div class="step-row reveal r2">
+                <div class="step-num-col">
+                    <div class="step-n">03</div>
+                </div>
+                <div>
+                    <h3 class="step-title">Implementation</h3>
+                    <p class="step-desc">
+                        Our team executes with precision, minimising disruption to your
+                        operations. Every deployment is tested, documented, and handed
+                        over with full training for your people.
+                    </p>
+                </div>
+            </div>
+            <div class="step-row reveal r3">
+                <div class="step-num-col">
+                    <div class="step-n">04</div>
+                </div>
+                <div>
+                    <h3 class="step-title">Ongoing Support</h3>
+                    <p class="step-desc">
+                        We don't disappear after go-live. Nissi provides 24/7 monitoring,
+                        proactive maintenance, and a dedicated support team who treats
+                        your uptime as seriously as our own reputation.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats & Social Proof -->
-    <section class="py-24 bg-gray-50 border-y border-gray-200">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16 reveal">
-                <h2 class="font-display text-4xl text-gray-900 mb-4">
-                    Trusted by Innovators Worldwide
-                </h2>
-                <p class="text-gray-600 text-lg">
-                    Join thousands of companies transforming their
-                    businesses with Nissi
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-8 mb-16">
-                <div class="text-center reveal">
-                    <div class="text-5xl font-bold text-blue-600 mb-2 stat-number counter" data-target="500">
-                        0
-                    </div>
-                    <div class="text-gray-600 font-medium">
-                        Enterprise Clients
-                    </div>
+    <!-- ── TESTIMONIAL ── -->
+    <section class="testimonial">
+        <div>
+            <div class="testi-label reveal">Client perspective</div>
+            <blockquote class="testi-quote reveal r1">
+                Nissi Technologies email setup was fast, seamless, and perfectly
+                tailored to our business needs. We're now running smoothly with
+                reliable, professional email services we can count on.
+            </blockquote>
+            <div class="testi-attr reveal r2">
+                <div class="testi-avatar">
+                    <img src="{{ asset('images/coffie.png') }}" alt="Emmanuel Coffie" />
                 </div>
-                <div class="text-center reveal delay-100">
-                    <div class="text-5xl font-bold text-blue-600 mb-2 flex items-center justify-center gap-1">
-                        <span class="stat-number counter" data-target="99">0</span>.99%
-                    </div>
-                    <div class="text-gray-600 font-medium">
-                        Uptime Guarantee
-                    </div>
-                </div>
-                <div class="text-center reveal delay-200">
-                    <div class="text-5xl font-bold text-blue-600 mb-2 flex items-center justify-center">
-                        <span class="stat-number counter" data-target="10">0</span>M+
-                    </div>
-                    <div class="text-gray-600 font-medium">
-                        Users Protected
-                    </div>
-                </div>
-                <div class="text-center reveal delay-300">
-                    <div class="text-5xl font-bold text-blue-600 mb-2">
-                        <span class="stat-number counter" data-target="150">0</span>+
-                    </div>
-                    <div class="text-gray-600 font-medium">
-                        Countries Served
-                    </div>
+                <div>
+                    <div class="testi-name">Emmanuel Coffie</div>
+                    <div class="testi-role">Head of IT, Safety Insurance Brokers</div>
                 </div>
             </div>
-
-            <!-- Testimonial -->
-            <div class="max-w-4xl mx-auto reveal">
-                <div class="bg-white rounded-3xl p-10 shadow-lg border-2 border-gray-200">
-                    <div class="flex items-start gap-6">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop"
-                            alt="CEO Portrait" class="w-20 h-20 rounded-full object-cover border-4 border-gray-100" />
-                        <div>
-                            <div class="flex items-center gap-1 text-yellow-400 mb-3">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p class="text-xl text-gray-700 italic mb-4 leading-relaxed">
-                                "Nissi Technologies transformed our entire
-                                infrastructure in just 6 months. The results
-                                exceeded our expectations – 60% cost
-                                reduction and zero downtime during peak
-                                traffic."
-                            </p>
-                            <div>
-                                <div class="font-bold text-gray-900">
-                                    Michael Chen
-                                </div>
-                                <div class="text-gray-600">
-                                    CTO, TechCorp Solutions
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="testi-right reveal r1">
+            <div class="testi-box">
+                <div class="testi-box-n">2<sup>+</sup></div>
+                <div class="testi-box-l">Companies transformed</div>
+            </div>
+            <div class="testi-box">
+                <div class="testi-box-n">6<sup>yr</sup></div>
+                <div class="testi-box-l">Industry experience</div>
+            </div>
+            <div class="testi-box">
+                <div class="testi-box-n">99<sup>.9%</sup></div>
+                <div class="testi-box-l">Uptime delivered</div>
+            </div>
+            <div class="testi-box">
+                <div class="testi-box-n">24<sup>/7</sup></div>
+                <div class="testi-box-l">Always on support</div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section - Subtle and Professional -->
-    <section id="contact" class="py-32 bg-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <div class="reveal">
-                <div
-                    class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full text-blue-700 font-semibold text-sm mb-8">
-                    <i class="fas fa-rocket"></i>
-                    Ready to Get Started?
-                </div>
-                <h2 class="font-display text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
-                    Let's Build Your Digital Future Together
-                </h2>
-                <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-                    Schedule a free consultation with our experts and
-                    discover how Nissi Technologies can transform your
-                    business.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <a href="#"
-                        class="group px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-lg transition-all shadow-lg shadow-blue-600/25 flex items-center justify-center gap-2">
-                        Schedule a Demo
-                        <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
-                    </a>
-                    <a href="#"
-                        class="px-10 py-5 bg-white hover:bg-gray-50 text-gray-900 rounded-xl font-semibold text-lg transition-all border-2 border-gray-300 flex items-center justify-center gap-2">
-                        <i class="fas fa-phone text-blue-600"></i>
-                        Talk to Sales
-                    </a>
-                </div>
-                <p class="text-sm text-gray-500">
-                    Join 500+ companies already transforming with Nissi • No
-                    credit card required
-                </p>
-            </div>
+    <!-- ── CTA ── -->
+    <section class="cta" id="contact">
+        <div class="cta-bg"></div>
+        <div class="cta-bg-grid"></div>
+        <div class="cta-chip reveal">Ready to get started?</div>
+        <h2 class="cta-h2 reveal r1">Let's make<br />something <em>great</em></h2>
+        <p class="cta-p reveal r2">
+            Whether you're modernizing legacy infrastructure or launching something
+            entirely new, we want to hear about it.
+        </p>
+        <div class="cta-btns reveal r3">
+            <a href="mailto:info@nissitechnologies.com" class="btn-fill">Schedule a Demo</a>
+            <a href="tel:+1234567890" class="btn-ghost">Start a conversation <span class="arrow">→</span></a>
         </div>
     </section>
 </x-layouts.app>

@@ -1,52 +1,57 @@
 import "./bootstrap";
 
-// Scroll Reveal Animation
-function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 100;
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-        }
-    }
-}
-window.addEventListener("scroll", reveal);
-reveal(); // Initial check
-
-// Stats Counter Animation
-const counters = document.querySelectorAll(".counter");
-let hasAnimated = false;
-
-const animateCounters = () => {
-    if (hasAnimated) return;
-
-    const firstCounter = counters[0];
-    if (!firstCounter) return;
-
-    const rect = firstCounter.getBoundingClientRect();
-    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-
-    if (isVisible) {
-        hasAnimated = true;
-        counters.forEach((counter) => {
-            const target = +counter.getAttribute("data-target");
-            const increment = target / 100;
-
-            const updateCounter = () => {
-                const c = +counter.innerText;
-                if (c < target) {
-                    counter.innerText = Math.ceil(c + increment);
-                    setTimeout(updateCounter, 20);
-                } else {
-                    counter.innerText = target;
-                }
-            };
-            updateCounter();
+// ── CURSOR ──
+const cur = document.getElementById("cur");
+const cur2 = document.getElementById("cur2");
+let mx = 0,
+    my = 0,
+    rx = 0,
+    ry = 0;
+document.addEventListener("mousemove", (e) => {
+    mx = e.clientX;
+    my = e.clientY;
+});
+(function tick() {
+    cur.style.left = mx + "px";
+    cur.style.top = my + "px";
+    rx += (mx - rx) * 0.1;
+    ry += (my - ry) * 0.1;
+    cur2.style.left = rx + "px";
+    cur2.style.top = ry + "px";
+    requestAnimationFrame(tick);
+})();
+document
+    .querySelectorAll(
+        "a,button,.service-card,.case-row,.step-row,.metric,.testi-box",
+    )
+    .forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+            cur.style.width = "18px";
+            cur.style.height = "18px";
+            cur2.style.width = "52px";
+            cur2.style.height = "52px";
         });
-    }
-};
+        el.addEventListener("mouseleave", () => {
+            cur.style.width = "8px";
+            cur.style.height = "8px";
+            cur2.style.width = "32px";
+            cur2.style.height = "32px";
+        });
+    });
 
-window.addEventListener("scroll", animateCounters);
-animateCounters(); // Initial check
+// ── NAV SCROLL ──
+const nav = document.getElementById("nav");
+window.addEventListener("scroll", () => {
+    nav.classList.toggle("scrolled", window.scrollY > 60);
+});
+
+// ── REVEAL ──
+const io = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+        });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+);
+document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
