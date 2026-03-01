@@ -53,21 +53,21 @@
             <div class="logo-bar-inner">
                 <span class="logo-item">Safety Insurance Brokers</span>
                 <span class="logo-item">Vanguard Assurance</span>
-                {{-- <span class="logo-item">Zenith Payments</span> --}}
+                {{-- <span class="logo-item">Nissi SMS</span>
                 <span class="logo-item">Nissi ClockIn</span>
-                <span class="logo-item">Nissi POS</span>
+                <span class="logo-item">Nissi POS</span> --}}
                 <span class="logo-item">E-Claim Platform</span>
-                {{-- <span class="logo-item">Prism Data</span> --}}
-                {{-- <span class="logo-item">Northstar Group</span> --}}
+                <span class="logo-item">Afroasia Reinsurance Brokers Ghana</span>
+                <span class="logo-item">Unique Bazzar</span>
                 <!-- duplicate for loop -->
                 <span class="logo-item">Safety Insurance Brokers</span>
                 <span class="logo-item">Vanguard Assurance</span>
-                {{-- <span class="logo-item">Zenith Payments</span> --}}
+                {{-- <span class="logo-item">Nissi SMS</span>
                 <span class="logo-item">Nissi ClockIn</span>
-                <span class="logo-item">Nissi POS</span>
+                <span class="logo-item">Nissi POS</span> --}}
                 <span class="logo-item">E-Claim Platform</span>
-                {{-- <span class="logo-item">Prism Data</span> --}}
-                {{-- <span class="logo-item">Northstar Group</span> --}}
+                <span class="logo-item">Afroasia Reinsurance Brokers Ghana</span>
+                <span class="logo-item">Unique Bazzar</span>
             </div>
         </div>
     </div>
@@ -260,20 +260,20 @@
             <a href="#" class="case-row reveal r1">
                 <span class="cr-num">002</span>
                 <span class="cr-name">Vanguard Assurance — Claim Platform</span>
-                <span class="cr-tag">Network</span>
+                <span class="cr-tag">Web Dev</span>
                 <span class="cr-year">2026</span>
                 <span class="cr-arr">→</span>
             </a>
             <a href="#" class="case-row reveal r2">
                 <span class="cr-num">003</span>
-                <span class="cr-name">Nissi Technologies — CLockin and Attendance System</span>
-                <span class="cr-tag">Web Dev</span>
+                <span class="cr-name">Afroasia Reinsurance Brokers — Corporate Mail System</span>
+                <span class="cr-tag">Email Services</span>
                 <span class="cr-year">2025</span>
                 <span class="cr-arr">→</span>
             </a>
             <a href="#" class="case-row reveal r3">
                 <span class="cr-num">004</span>
-                <span class="cr-name">Nissi Technologies — POS System</span>
+                <span class="cr-name">Uniq Bazzar — Nissi POS</span>
                 <span class="cr-tag">Web Dev</span>
                 <span class="cr-year">2025</span>
                 <span class="cr-arr">→</span>
@@ -399,7 +399,7 @@
         </p>
         <div class="cta-btns reveal r3">
             <a href="mailto:info@nissitechnologies.com" class="btn-fill">Schedule a Demo</a>
-            <a href="tel:+1234567890" class="btn-ghost">Start a conversation <span class="arrow">→</span></a>
+            <a href="tel:0505811511" class="btn-ghost">Start a conversation <span class="arrow">→</span></a>
         </div>
     </section>
 </x-layouts.app>
