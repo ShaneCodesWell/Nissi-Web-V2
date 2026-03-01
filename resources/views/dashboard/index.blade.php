@@ -10,7 +10,7 @@
             <p class="hero-sub">
                 We are a forward-thinking technology company delivering innovative
                 solutions that power modern businesses — from robust POS Systems and
-                Cloud Infrastructure to remote work tools that keep you connected,
+                Attendance Systems to email work tools that keep you connected,
                 productive, and ahead of the competition.
             </p>
             <div class="hero-actions">
