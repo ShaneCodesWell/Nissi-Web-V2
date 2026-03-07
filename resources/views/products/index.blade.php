@@ -10,10 +10,10 @@
                 Our <em>products</em><br>in full
             </h1>
             <p class="hero-sub">
-                We are a forward-thinking technology company delivering innovative
-                solutions that power modern businesses — from robust POS Systems and
-                Attendance Systems to email work tools that keep you connected,
-                productive, and ahead of the competition.
+                Nissi Technologies is a technology company focused on building practical
+                digital solutions that help businesses operate more efficiently. Our team
+                combines innovation, reliability, and modern design to create systems that
+                simplify operations, improve productivity, and support business growth.
             </p>
             <div class="hero-actions">
                 <a href="#contact" class="btn-fill">Schedule a Demo</a>
@@ -22,8 +22,7 @@
         </div>
 
         <div class="hero-image">
-            <img src="{{ asset('images/products.jpg') }}"
-                alt="Modern corporate office" loading="eager" />
+            <img src="{{ asset('images/products.jpg') }}" alt="Modern corporate office" loading="eager" />
             <div class="hero-card">
                 <div class="hero-stat">
                     <div class="hero-stat-n">5<sup>+</sup></div>
@@ -111,7 +110,8 @@
                 <div class="pf-icon-center">
                     <svg viewBox="0 0 40 40" fill="none">
                         <circle cx="20" cy="20" r="14" stroke="rgba(37,99,235,0.6)" stroke-width="1.5" />
-                        <circle cx="20" cy="20" r="8" stroke="rgba(37,99,235,0.25)" stroke-width="1" />
+                        <circle cx="20" cy="20" r="8" stroke="rgba(37,99,235,0.25)"
+                            stroke-width="1" />
                         <path d="M20 12 L20 20 L26 24" stroke="rgba(37,99,235,0.9)" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round" />
                         <circle cx="20" cy="20" r="1.5" fill="rgba(37,99,235,0.8)" />
@@ -245,8 +245,7 @@
             </a>
 
             <!-- NissiSMS -->
-            <a href="#contact" class="compact-card reveal r2" id="sms"
-                data-category="communication">
+            <a href="#contact" class="compact-card reveal r2" id="sms" data-category="communication">
                 <div class="cc-top">
                     <div class="cc-num">06</div>
                     <div class="cc-status live">Live</div>

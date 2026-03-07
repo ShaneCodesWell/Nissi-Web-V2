@@ -5,11 +5,11 @@
      </a>
      <!-- <a href="/" class="nav-logo">Nissi<span>.</span></a> -->
      <ul class="nav-links">
-         <li><a href="#about">About</a></li>
-         <li><a href="#services">Services</a></li>
-         <li><a href="#products">Products</a></li>
-         <li><a href="#clients">Clients</a></li>
-         <li><a href="#contact">Contact</a></li>
+         <li><a href="{{ route('home') }}#about">About</a></li>
+         <li><a href="{{ route('home') }}#services">Services</a></li>
+         <li><a href="{{ route('home') }}#products">Products</a></li>
+         <li><a href="{{ route('home') }}#clients">Clients</a></li>
+         <li><a href="{{ route('home') }}#contact">Contact</a></li>
      </ul>
      <a href="mailto:info@nissitechnologies.com" class="nav-btn">Get in touch</a>
  </nav>
