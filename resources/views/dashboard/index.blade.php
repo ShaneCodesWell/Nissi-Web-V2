@@ -79,7 +79,12 @@
             <h2 class="about-heading reveal r1">
                 Technology that <em>works</em> as hard as you do
             </h2>
+
+            <div class="about-actions">
+                <a href="{{ route('about') }}" class="btn-fill">Find out More</a>
+            </div>
         </div>
+
         <div>
             <p class="about-body reveal r1">
                 Nissi Technologies is a forward-thinking IT company built around one
@@ -141,7 +146,8 @@
                 <div class="blue-line"></div>
                 <div class="svc-num">02</div>
                 <svg class="svc-icon" viewBox="0 0 40 40" fill="none">
-                    <rect x="6" y="6" width="12" height="12" stroke="rgba(37,99,235,0.6)" stroke-width="1.5" />
+                    <rect x="6" y="6" width="12" height="12" stroke="rgba(37,99,235,0.6)"
+                        stroke-width="1.5" />
                     <rect x="22" y="6" width="12" height="12" stroke="rgba(107,122,153,0.4)"
                         stroke-width="1.5" />
                     <rect x="6" y="22" width="12" height="12" stroke="rgba(107,122,153,0.4)"
@@ -291,7 +297,7 @@
                         <li>Sales & revenue reporting</li>
                         <li>Receipt printing & digital billing</li>
                     </ul>
-                    <a href="products.html#pos" class="product-link">
+                    <a href="{{ route('products') }}" class="product-link">
                         <span>Learn more</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"
@@ -333,7 +339,7 @@
                         <li>Automated timesheets</li>
                         <li>Payroll-ready exports</li>
                     </ul>
-                    <a href="products.html#clockin" class="product-link">
+                    <a href="{{ route('products') }}" class="product-link">
                         <span>Learn more</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"
@@ -378,7 +384,7 @@
                         <li>Delivery & open analytics</li>
                         <li>API integration ready</li>
                     </ul>
-                    <a href="products.html#sms" class="product-link">
+                    <a href="{{ route('products') }}" class="product-link">
                         <span>Learn more</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"

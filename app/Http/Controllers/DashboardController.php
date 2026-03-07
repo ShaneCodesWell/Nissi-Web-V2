@@ -31,9 +31,9 @@ class DashboardController extends Controller
         return view('shop.index');
     }
 
-    public function vision()
+    public function about()
     {
-        return view('vision.index');
+        return view('about.index');
     }
 
     public function blogs()

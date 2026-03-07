@@ -17,7 +17,7 @@
             </p>
             <div class="hero-actions">
                 <a href="#contact" class="btn-fill">Schedule a Demo</a>
-                <a href="#services" class="btn-ghost">Our services <span class="arrow">→</span></a>
+                {{-- <a href="#services" class="btn-ghost">Our services <span class="arrow">→</span></a> --}}
             </div>
         </div>
 
@@ -73,8 +73,8 @@
                 <li>Customer relationship management</li>
             </ul>
             <div class="pf-actions">
-                <a href="index.html#contact" class="btn-pf-primary">Request a Demo</a>
-                <a href="index.html#contact" class="btn-pf-ghost">Learn more →</a>
+                <a href="#contact" class="btn-pf-primary">Request a Demo</a>
+                <a href="#contact" class="btn-pf-ghost">Learn more →</a>
             </div>
         </div>
         <div class="pf-visual">
@@ -135,8 +135,8 @@
                 <li>Real-time attendance dashboard</li>
             </ul>
             <div class="pf-actions">
-                <a href="index.html#contact" class="btn-pf-primary">Request a Demo</a>
-                <a href="index.html#contact" class="btn-pf-ghost">Learn more →</a>
+                <a href="#contact" class="btn-pf-primary">Request a Demo</a>
+                <a href="#contact" class="btn-pf-ghost">Learn more →</a>
             </div>
         </div>
     </div>
@@ -158,8 +158,8 @@
                 <li>Emergency evacuation roll call</li>
             </ul>
             <div class="pf-actions">
-                <a href="index.html#contact" class="btn-pf-primary">Request a Demo</a>
-                <a href="index.html#contact" class="btn-pf-ghost">Learn more →</a>
+                <a href="#contact" class="btn-pf-primary">Request a Demo</a>
+                <a href="#contact" class="btn-pf-ghost">Learn more →</a>
             </div>
         </div>
         <div class="pf-visual">
@@ -193,7 +193,7 @@
         <div class="compact-grid">
 
             <!-- NissiFlow -->
-            <a href="index.html#contact" class="compact-card reveal" id="flow" data-category="operations">
+            <a href="#contact" class="compact-card reveal" id="flow" data-category="operations">
                 <div class="cc-top">
                     <div class="cc-num">04</div>
                     <div class="cc-status live">Live</div>
@@ -219,7 +219,7 @@
             </a>
 
             <!-- NissiVwork -->
-            <a href="index.html#contact" class="compact-card reveal r1" id="vwork" data-category="workforce">
+            <a href="#contact" class="compact-card reveal r1" id="vwork" data-category="workforce">
                 <div class="cc-top">
                     <div class="cc-num">05</div>
                     <div class="cc-status live">Live</div>
@@ -245,7 +245,7 @@
             </a>
 
             <!-- NissiSMS -->
-            <a href="index.html#contact" class="compact-card reveal r2" id="sms"
+            <a href="#contact" class="compact-card reveal r2" id="sms"
                 data-category="communication">
                 <div class="cc-top">
                     <div class="cc-num">06</div>
@@ -276,7 +276,7 @@
             </a>
 
             <!-- NissiEmails -->
-            <a href="index.html#contact" class="compact-card reveal r3" id="emails" data-category="communication"
+            <a href="#contact" class="compact-card reveal r3" id="emails" data-category="communication"
                 style="grid-column: span 3; border-top: 1px solid var(--rule);">
                 <div style="display:grid; grid-template-columns: auto 1fr auto; gap: 48px; align-items: center;">
                     <div>
@@ -432,7 +432,7 @@
     </section>
 
     {{-- CTA --}}
-    <section class="products-cta">
+    <section class="products-cta" id="contact">
         <div>
             <div class="pcta-label reveal">Ready to get started?</div>
             <h2 class="pcta-title reveal r1">Not sure which<br><em>product fits?</em></h2>
@@ -441,8 +441,8 @@
             <p class="pcta-desc">Talk to our team and we'll help you identify exactly which Nissi platform — or
                 combination of platforms — makes the most sense for your operations, team size, and budget.</p>
             <div class="pcta-btns">
-                <a href="index.html#contact" class="btn-fill">Book a Free Consultation</a>
-                <a href="index.html" class="btn-outline-light">Back to Home</a>
+                <a href="mailto:info@nissitechnologies.com" class="btn-fill">Book a Free Consultation</a>
+                <a href="{{ route('home') }}" class="btn-outline-light">Back to Home</a>
             </div>
         </div>
     </section>

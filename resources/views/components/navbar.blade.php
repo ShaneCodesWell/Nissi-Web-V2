@@ -7,9 +7,9 @@
      <ul class="nav-links">
          <li><a href="#about">About</a></li>
          <li><a href="#services">Services</a></li>
-         <li><a href="{{ route('products') }}">Products</a></li>
+         <li><a href="#products">Products</a></li>
          <li><a href="#clients">Clients</a></li>
          <li><a href="#contact">Contact</a></li>
      </ul>
-     <a href="#contact" class="nav-btn">Get in touch</a>
+     <a href="mailto:info@nissitechnologies.com" class="nav-btn">Get in touch</a>
  </nav>
