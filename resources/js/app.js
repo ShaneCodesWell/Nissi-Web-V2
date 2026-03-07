@@ -55,3 +55,23 @@ const io = new IntersectionObserver(
     { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
 );
 document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+// ── FILTER TABS ──
+const filterBtns = document.querySelectorAll(".filter-btn");
+const products = document.querySelectorAll("[data-category]");
+
+filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        filterBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const filter = btn.dataset.filter;
+        products.forEach((p) => {
+            if (filter === "all" || p.dataset.category === filter) {
+                p.style.display = "";
+                p.style.opacity = "1";
+            } else {
+                p.style.display = "none";
+            }
+        });
+    });
+});

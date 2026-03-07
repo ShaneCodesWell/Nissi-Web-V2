@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('home');
 Route::get('/solutions', [DashboardController::class, 'solutions'])->name('solutions');
-Route::get('/programs', [DashboardController::class, 'programs'])->name('programs');
+Route::get('/products', [DashboardController::class, 'products'])->name('products');
 Route::get('/shop', [DashboardController::class, 'shop'])->name('shop');
 Route::get('/vision', [DashboardController::class, 'vision'])->name('vision');
 Route::get('/blogs', [DashboardController::class, 'blogs'])->name('blogs');

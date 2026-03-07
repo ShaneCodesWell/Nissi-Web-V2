@@ -141,8 +141,7 @@
                 <div class="blue-line"></div>
                 <div class="svc-num">02</div>
                 <svg class="svc-icon" viewBox="0 0 40 40" fill="none">
-                    <rect x="6" y="6" width="12" height="12" stroke="rgba(37,99,235,0.6)"
-                        stroke-width="1.5" />
+                    <rect x="6" y="6" width="12" height="12" stroke="rgba(37,99,235,0.6)" stroke-width="1.5" />
                     <rect x="22" y="6" width="12" height="12" stroke="rgba(107,122,153,0.4)"
                         stroke-width="1.5" />
                     <rect x="6" y="22" width="12" height="12" stroke="rgba(107,122,153,0.4)"
@@ -240,6 +239,167 @@
                 </p>
                 <a href="#contact" class="svc-link">Learn more →</a>
             </div>
+        </div>
+    </section>
+
+    <!-- ── PRODUCTS ── -->
+    <section class="products" id="products">
+
+        <div class="products-header reveal">
+            <div>
+                <div class="chip">Built by Nissi</div>
+                <h2 class="section-title" style="margin-top: 20px;">Our <em>products</em></h2>
+            </div>
+            <p class="products-intro">
+                Beyond services, we build. These are the proprietary platforms we've engineered
+                in-house — tools that solve real operational problems for modern businesses.
+            </p>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- NISSI POS -->
+            <div class="product-card reveal">
+                <div class="product-card-inner">
+                    <div class="product-top">
+                        <div class="product-badge">01</div>
+                        <div class="product-tag">Point of Sale</div>
+                    </div>
+                    <div class="product-icon-wrap">
+                        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="10" width="40" height="28" rx="3"
+                                stroke="rgba(37,99,235,0.7)" stroke-width="1.5" />
+                            <rect x="14" y="16" width="28" height="16" rx="1"
+                                stroke="rgba(37,99,235,0.35)" stroke-width="1" />
+                            <line x1="8" y1="38" x2="48" y2="38"
+                                stroke="rgba(37,99,235,0.25)" stroke-width="1" />
+                            <path d="M22 44 L34 44" stroke="rgba(37,99,235,0.6)" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path d="M18 22 L22 26 L30 18" stroke="rgba(37,99,235,0.8)" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Nissi <span>POS</span></h3>
+                    <p class="product-desc">
+                        An all-in-one Point of Sale system designed to streamline your operations, boost sales, and
+                        build lasting customer relationships — all from one powerful platform built for retail and
+                        service-based businesses.
+                    </p>
+                    <ul class="product-features">
+                        <li>Real-time inventory sync</li>
+                        <li>Multi-branch management</li>
+                        <li>Sales & revenue reporting</li>
+                        <li>Receipt printing & digital billing</li>
+                    </ul>
+                    <a href="products.html#pos" class="product-link">
+                        <span>Learn more</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- NISSI CLOCKIN -->
+            <div class="product-card product-card--featured reveal r1">
+                <div class="product-card-inner">
+                    <div class="product-top">
+                        <div class="product-badge">02</div>
+                        <div class="product-tag product-tag--featured">Featured</div>
+                    </div>
+                    <div class="product-icon-wrap">
+                        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="28" cy="28" r="18" stroke="rgba(37,99,235,0.5)"
+                                stroke-width="1.5" />
+                            <circle cx="28" cy="28" r="11" stroke="rgba(37,99,235,0.25)"
+                                stroke-width="1" />
+                            <path d="M28 18 L28 28 L35 33" stroke="rgba(37,99,235,0.9)" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="28" cy="28" r="2" fill="rgba(37,99,235,0.8)" />
+                            <path d="M20 10 L18 7 M36 10 L38 7" stroke="rgba(37,99,235,0.4)" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Nissi <span>ClockIn</span></h3>
+                    <p class="product-desc">
+                        A modern, efficient solution designed to simplify attendance management. Whether you're a small
+                        business or large enterprise, track staff timekeeping with precision — biometric-ready and
+                        GPS-enabled.
+                    </p>
+                    <ul class="product-features">
+                        <li>Biometric & PIN clock-in</li>
+                        <li>GPS location verification</li>
+                        <li>Automated timesheets</li>
+                        <li>Payroll-ready exports</li>
+                    </ul>
+                    <a href="products.html#clockin" class="product-link">
+                        <span>Learn more</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- NISSI SMS -->
+            <div class="product-card reveal r2">
+                <div class="product-card-inner">
+                    <div class="product-top">
+                        <div class="product-badge">03</div>
+                        <div class="product-tag">Messaging</div>
+                    </div>
+                    <div class="product-icon-wrap">
+                        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="34" height="24" rx="4"
+                                stroke="rgba(37,99,235,0.6)" stroke-width="1.5" />
+                            <path d="M8 32 L4 40 L16 36" stroke="rgba(37,99,235,0.5)" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <line x1="15" y1="20" x2="35" y2="20"
+                                stroke="rgba(37,99,235,0.35)" stroke-width="1" stroke-linecap="round" />
+                            <line x1="15" y1="25" x2="30" y2="25"
+                                stroke="rgba(37,99,235,0.25)" stroke-width="1" stroke-linecap="round" />
+                            <circle cx="44" cy="16" r="8" fill="rgba(37,99,235,0.1)"
+                                stroke="rgba(37,99,235,0.5)" stroke-width="1.5" />
+                            <path d="M41 16 L43 18 L47 13" stroke="rgba(37,99,235,0.8)" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="product-name">Nissi <span>SMS</span></h3>
+                    <p class="product-desc">
+                        Connect with your customers in real-time through fast, reliable, and affordable Bulk SMS —
+                        powered by trusted partners Arkesel and Npontu. Your messages are delivered instantly, securely,
+                        and tracked end-to-end.
+                    </p>
+                    <ul class="product-features">
+                        <li>Bulk SMS broadcasting</li>
+                        <li>Scheduled & automated sends</li>
+                        <li>Delivery & open analytics</li>
+                        <li>API integration ready</li>
+                    </ul>
+                    <a href="products.html#sms" class="product-link">
+                        <span>Learn more</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW ALL BUTTON -->
+        <div class="products-footer reveal">
+            <div class="products-footer-rule"></div>
+            <a href="{{ route('products') }}" class="products-view-all">
+                <span>View all products</span>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+            <div class="products-footer-rule"></div>
         </div>
     </section>
 

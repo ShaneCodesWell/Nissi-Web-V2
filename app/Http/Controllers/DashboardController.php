@@ -21,9 +21,9 @@ class DashboardController extends Controller
         return view('solutions.index');
     }
 
-    public function programs()
+    public function products()
     {
-        return view('programs.index');
+        return view('products.index');
     }
 
     public function shop()
