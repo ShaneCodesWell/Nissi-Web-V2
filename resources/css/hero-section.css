@@ -1,0 +1,326 @@
+/* HERO */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background: var(--white);
+}
+
+/* Left panel */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 72px 100px 64px;
+    background: var(--white);
+}
+.hero-content::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    background: var(--white);
+    clip-path: polygon(0 0, 60% 0, 100% 50%, 60% 100%, 0 100%);
+    z-index: 4;
+}
+
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--ff-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue-bright);
+    margin-bottom: 36px;
+    opacity: 0;
+    animation: slideRight 0.7s ease 0.2s forwards;
+}
+.hero-tag::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: var(--blue-bright);
+}
+
+.hero-h1 {
+    font-family: var(--ff-display);
+    font-size: clamp(48px, 5.2vw, 76px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 28px;
+    opacity: 0;
+    animation: slideRight 0.8s ease 0.4s forwards;
+}
+.hero-h1 em {
+    font-style: italic;
+    color: var(--blue-bright);
+}
+
+.hero-sub {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--silver);
+    max-width: 420px;
+    margin-bottom: 56px;
+    opacity: 0;
+    animation: slideRight 0.8s ease 0.6s forwards;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    opacity: 0;
+    animation: slideRight 0.8s ease 0.75s forwards;
+}
+.btn-fill {
+    font-family: var(--ff-body);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--blue);
+    color: var(--white);
+    padding: 15px 40px;
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition:
+        background 0.3s,
+        border-color 0.3s;
+}
+.btn-fill:hover {
+    background: var(--blue-bright);
+    border-color: var(--blue-bright);
+}
+.btn-ghost {
+    font-family: var(--ff-body);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--silver);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition:
+        color 0.3s,
+        gap 0.3s;
+}
+.btn-ghost:hover {
+    color: var(--ink);
+    gap: 16px;
+}
+.btn-ghost .arrow {
+    font-size: 18px;
+}
+
+/* Right panel — image */
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: brightness(0.75) saturate(0.85);
+    opacity: 0;
+    animation: fadeIn 1.2s ease 0.5s forwards;
+    transition: transform 8s ease;
+}
+.hero-image:hover img {
+    transform: scale(1.04);
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(120deg, var(--white) 0%, transparent 35%),
+        linear-gradient(
+            to bottom,
+            transparent 55%,
+            rgba(244, 246, 250, 0.6) 100%
+        );
+    z-index: 2;
+}
+
+/* Floating stats card */
+.hero-card {
+    position: absolute;
+    bottom: 52px;
+    right: 52px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--rule);
+    box-shadow: 0 8px 40px rgba(27, 42, 78, 0.12);
+    padding: 28px 36px;
+    display: flex;
+    gap: 44px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease 1.1s forwards;
+}
+.hero-stat-n {
+    font-family: var(--ff-display);
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1;
+}
+.hero-stat-n sup {
+    font-size: 15px;
+    color: var(--blue-bright);
+    vertical-align: super;
+}
+.hero-stat-l {
+    font-family: var(--ff-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--silver);
+    margin-top: 6px;
+}
+
+/* Hero bottom bar */
+.hero-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 22px 64px;
+    border-top: 1px solid var(--rule);
+    background: var(--white);
+    z-index: 5;
+    opacity: 0;
+    animation: fadeIn 0.8s ease 1.3s forwards;
+}
+.hero-bar-item {
+    font-family: var(--ff-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(107, 122, 153, 0.6);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero-bar-item::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--blue-bright);
+}
+
+/* ─── RESPONSIVE ──────────────────── */
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero-content {
+        padding: 120px 40px 100px 40px;
+    }
+    .hero-card {
+        gap: 28px;
+        padding: 20px 24px;
+        right: 24px;
+        bottom: 80px;
+    }
+    .hero-bar {
+        gap: 24px;
+        padding: 22px 40px;
+    }
+}
+
+/* Tablet portrait — stack vertically */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        min-height: 100svh;
+    }
+
+    /* Hide the chevron shape — looks broken when stacked */
+    .hero-content::after {
+        display: none;
+    }
+
+    .hero-content {
+        padding: 120px 24px 48px;
+        order: 1;
+    }
+
+    .hero-h1 {
+        font-size: clamp(36px, 9vw, 52px);
+    }
+
+    .hero-sub {
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    /* Image becomes a fixed-height banner below content */
+    .hero-image {
+        order: 2;
+        height: 340px;
+    }
+
+    /* Card repositions to bottom-center on mobile */
+    .hero-card {
+        display: none
+    }
+
+    /* Bar stretches full width and scrolls if needed */
+    .hero-bar {
+        display: none
+    }
+    .hero-bar::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 100px 20px 40px;
+    }
+
+    .hero-card {
+        display: none
+    }
+    .hero-stat-n {
+        display: none
+    }
+
+    .hero-bar-item {
+        display: none
+    }
+}

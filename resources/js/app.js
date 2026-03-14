@@ -1,4 +1,5 @@
 import "./bootstrap";
+import "./navbar";
 
 // ── CURSOR ──
 const cur = document.getElementById("cur");

@@ -1,0 +1,162 @@
+/* ABOUT */
+.about {
+    padding: 140px 64px;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 100px;
+    align-items: top;
+    position: relative;
+    background: var(--white);
+}
+.about-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 40px;
+    opacity: 0;
+    animation: slideRight 0.8s ease 0.75s forwards;
+}
+.about::before {
+    content: "NISSI";
+    position: absolute;
+    font-family: var(--ff-display);
+    font-size: 220px;
+    font-weight: 700;
+    color: rgba(27, 42, 78, 0.03);
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: -0.04em;
+    pointer-events: none;
+    user-select: none;
+}
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--ff-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--blue-bright);
+    margin-bottom: 32px;
+}
+.chip::before {
+    content: "";
+    width: 24px;
+    height: 1px;
+    background: var(--blue-bright);
+}
+
+.about-heading {
+    font-family: var(--ff-display);
+    font-size: clamp(36px, 3.8vw, 54px);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+}
+.about-heading em {
+    font-style: italic;
+    color: var(--blue-bright);
+}
+
+.about-body {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--silver);
+    margin-bottom: 52px;
+}
+.about-body strong {
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.metric-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+}
+.metric {
+    background: var(--white);
+    padding: 28px 32px;
+    transition: background 0.3s;
+}
+.metric:hover {
+    background: var(--off-white);
+}
+.metric-n {
+    font-family: var(--ff-display);
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--ink);
+}
+.metric-n sup {
+    font-size: 17px;
+    color: var(--blue-bright);
+    vertical-align: super;
+}
+.metric-l {
+    font-family: var(--ff-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--silver);
+    margin-top: 8px;
+    opacity: 0.65;
+}
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 100px 40px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+        padding: 80px 24px;
+        gap: 40px;
+    }
+
+    /* Hide the giant watermark — too distracting on small screens */
+    .about::before {
+        display: none;
+    }
+
+    .about-heading {
+        font-size: clamp(28px, 8vw, 40px);
+    }
+
+    .about-actions {
+        padding-top: 24px;
+    }
+
+    .about-body {
+        font-size: 15px;
+        margin-bottom: 36px;
+    }
+
+    .metric-n {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 64px 20px;
+    }
+
+    .metric {
+        padding: 20px 20px;
+    }
+
+    .metric-n {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,134 @@
+/* CTA */
+
+.cta {
+    position: relative;
+    padding: 160px 64px;
+    overflow: hidden;
+    text-align: center;
+    background: var(--white);
+}
+.cta-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            ellipse 80% 60% at 50% 100%,
+            rgba(37, 99, 235, 0.07) 0%,
+            transparent 70%
+        ),
+        var(--white);
+    z-index: 0;
+}
+.cta-bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(var(--rule-mid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--rule-mid) 1px, transparent 1px);
+    background-size: 64px 64px;
+    opacity: 1;
+    z-index: 0;
+    mask-image: radial-gradient(
+        ellipse 80% 80% at 50% 50%,
+        black 20%,
+        transparent 80%
+    );
+}
+.cta > * {
+    position: relative;
+    z-index: 1;
+}
+.cta-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--ff-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--blue-bright);
+    margin-bottom: 40px;
+}
+.cta-chip::before,
+.cta-chip::after {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: var(--blue-bright);
+}
+.cta-h2 {
+    font-family: var(--ff-display);
+    font-size: clamp(52px, 7.5vw, 104px);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 28px;
+}
+.cta-h2 em {
+    font-style: italic;
+    color: var(--blue-bright);
+}
+.cta-p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--silver);
+    max-width: 480px;
+    margin: 0 auto 60px;
+}
+.cta-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .cta {
+        padding: 120px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta {
+        padding: 100px 24px;
+    }
+
+    .cta-h2 {
+        font-size: clamp(40px, 10vw, 64px);
+        line-height: 1.05;
+    }
+
+    .cta-p {
+        font-size: 16px;
+        margin-bottom: 44px;
+        max-width: 100%;
+    }
+
+    .cta-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* Make the fill button full width on mobile */
+    .btn-fill {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta {
+        padding: 80px 20px;
+    }
+
+    .cta-h2 {
+        font-size: clamp(36px, 11vw, 52px);
+    }
+
+    .cta-chip {
+        font-size: 9px;
+    }
+}

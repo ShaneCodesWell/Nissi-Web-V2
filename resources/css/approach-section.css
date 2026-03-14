@@ -1,0 +1,130 @@
+/* APPROACH */
+.approach {
+    padding: 140px 64px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    background: var(--white);
+}
+.approach-left {
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+}
+.approach-title {
+    font-family: var(--ff-display);
+    font-size: clamp(42px, 4.2vw, 60px);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-top: 24px;
+    color: var(--ink);
+}
+.approach-title em {
+    font-style: italic;
+    color: var(--blue-bright);
+}
+.approach-copy {
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--silver);
+}
+
+.step-row {
+    display: flex;
+    gap: 40px;
+    padding: 52px 0;
+    border-bottom: 1px solid var(--rule);
+}
+.step-row:first-child {
+    border-top: 1px solid var(--rule);
+}
+.step-num-col {
+    flex-shrink: 0;
+    width: 56px;
+}
+.step-n {
+    font-family: var(--ff-display);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+    color: rgba(27, 42, 78, 0.08);
+    transition: color 0.4s;
+}
+.step-row:hover .step-n {
+    color: var(--blue-bright);
+}
+.step-title {
+    font-family: var(--ff-display);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 14px;
+    transition: font-style 0.3s;
+}
+.step-row:hover .step-title {
+    font-style: italic;
+}
+.step-desc {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--silver);
+}
+
+@media (max-width: 1024px) {
+    .approach {
+        padding: 100px 40px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .approach {
+        grid-template-columns: 1fr;
+        padding: 80px 24px;
+        gap: 48px;
+    }
+
+    /* Unstick the left panel — no point on mobile */
+    .approach-left {
+        position: static;
+    }
+
+    .approach-title {
+        font-size: clamp(32px, 8vw, 44px);
+    }
+
+    .step-row {
+        gap: 24px;
+        padding: 36px 0;
+    }
+
+    .step-n {
+        font-size: 36px;
+    }
+
+    .step-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .approach {
+        padding: 64px 20px;
+    }
+
+    .step-num-col {
+        width: 40px;
+    }
+
+    .step-n {
+        font-size: 28px;
+    }
+
+    .step-row {
+        gap: 16px;
+        padding: 28px 0;
+    }
+}

@@ -1,0 +1,140 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   CTA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.about-cta {
+    background: var(--white);
+    padding: 140px 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    border-top: 1px solid var(--rule);
+    position: relative;
+    overflow: hidden;
+}
+.about-cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(var(--rule-mid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--rule-mid) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(
+        ellipse 60% 80% at 100% 50%,
+        black 20%,
+        transparent 75%
+    );
+    pointer-events: none;
+}
+.acta-title {
+    font-family: var(--ff-display);
+    font-size: clamp(40px, 4.5vw, 62px);
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--ink);
+}
+.acta-title em {
+    font-style: italic;
+    color: var(--blue-bright);
+}
+.acta-right {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.acta-body {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--silver);
+}
+.acta-btns {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.btn-fill {
+    font-family: var(--ff-body);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--blue);
+    color: var(--white);
+    padding: 14px 36px;
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    transition:
+        background 0.3s,
+        border-color 0.3s;
+    cursor: none;
+}
+.btn-fill:hover {
+    background: var(--blue-bright);
+    border-color: var(--blue-bright);
+}
+.btn-ghost-dark {
+    font-family: var(--ff-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--silver);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition:
+        color 0.3s,
+        gap 0.3s;
+    cursor: none;
+}
+.btn-ghost-dark:hover {
+    color: var(--ink);
+    gap: 14px;
+}
+
+@media (max-width: 1024px) {
+    .about-cta {
+        padding: 100px 40px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-cta {
+        grid-template-columns: 1fr;
+        padding: 80px 24px;
+        gap: 40px;
+    }
+
+    .acta-title {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+
+    .acta-body {
+        font-size: 15px;
+    }
+
+    .acta-btns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    /* Full width on mobile */
+    .btn-fill {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-cta {
+        padding: 64px 20px;
+    }
+
+    .acta-title {
+        font-size: clamp(28px, 9vw, 40px);
+    }
+}

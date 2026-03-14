@@ -1,0 +1,166 @@
+/* VALUES */
+
+.values {
+    padding: 0 64px 140px;
+    background: var(--white);
+}
+.values-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 56px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 0;
+}
+.values-title {
+    font-family: var(--ff-display);
+    font-size: clamp(40px, 4.5vw, 64px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+}
+.values-title em {
+    font-style: italic;
+    color: var(--blue-bright);
+}
+.values-meta {
+    font-family: var(--ff-mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(107, 122, 153, 0.45);
+    padding-bottom: 8px;
+}
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.value-card {
+    padding: 52px 44px;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+    overflow: hidden;
+    transition: background 0.35s;
+    cursor: none;
+}
+.value-card:nth-child(3n) {
+    border-right: none;
+}
+.value-card:nth-child(n + 4) {
+    border-bottom: none;
+}
+.value-card:hover {
+    background: var(--off-white);
+}
+.value-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--blue-bright);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.value-card:hover::before {
+    transform: scaleX(1);
+}
+.value-num {
+    font-family: var(--ff-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    color: var(--blue-bright);
+    opacity: 0.55;
+    margin-bottom: 32px;
+}
+.value-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 24px;
+}
+.value-name {
+    font-family: var(--ff-display);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 14px;
+    transition: font-style 0.3s;
+}
+.value-card:hover .value-name {
+    font-style: italic;
+}
+.value-desc {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--silver);
+}
+
+@media (max-width: 1024px) {
+    .values {
+        padding: 0 40px 100px;
+    }
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Reset 3-col border rules, apply 2-col */
+    .value-card:nth-child(3n) {
+        border-right: 1px solid var(--rule);
+    }
+    .value-card:nth-child(n + 4) {
+        border-bottom: 1px solid var(--rule);
+    }
+    .value-card:nth-child(2n) {
+        border-right: none;
+    }
+    .value-card:nth-child(n + 5) {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .values {
+        padding: 0 24px 80px;
+    }
+    .values-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding-bottom: 40px;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    /* Reset all border rules for single column */
+    .value-card:nth-child(3n),
+    .value-card:nth-child(2n) {
+        border-right: none;
+    }
+    .value-card:nth-child(n + 4),
+    .value-card:nth-child(n + 5) {
+        border-bottom: 1px solid var(--rule);
+    }
+    .value-card:last-child {
+        border-bottom: none;
+    }
+    .value-card {
+        padding: 36px 24px;
+        border-right: none;
+    }
+    .value-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .values {
+        padding: 0 20px 64px;
+    }
+    .value-card {
+        padding: 28px 20px;
+    }
+}

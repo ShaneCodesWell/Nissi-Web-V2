@@ -1,0 +1,178 @@
+/* MISSION & VISION */
+
+.mission {
+    padding: 140px 64px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+    background: var(--white);
+    border-top: 1px solid var(--rule);
+    position: relative;
+    overflow: hidden;
+}
+.mission::before {
+    content: "WHY";
+    position: absolute;
+    font-family: var(--ff-display);
+    font-size: 260px;
+    font-weight: 700;
+    color: rgba(27, 42, 78, 0.025);
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: -0.04em;
+    pointer-events: none;
+    user-select: none;
+}
+
+.mission-left {
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+}
+.mission-heading {
+    font-family: var(--ff-display);
+    font-size: clamp(40px, 4vw, 58px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-top: 24px;
+}
+.mission-heading em {
+    font-style: italic;
+    color: var(--blue-bright);
+}
+.mission-body {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--silver);
+    margin-top: 28px;
+}
+.mission-body strong {
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.mv-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+}
+.mv-card {
+    background: var(--white);
+    padding: 44px 40px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.35s;
+}
+.mv-card:hover {
+    background: var(--off-white);
+}
+.mv-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--blue-bright);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.mv-card:hover::before {
+    transform: scaleX(1);
+}
+.mv-card-label {
+    font-family: var(--ff-mono);
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--blue-bright);
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+.mv-card-title {
+    font-family: var(--ff-display);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 14px;
+    transition: font-style 0.3s;
+}
+.mv-card:hover .mv-card-title {
+    font-style: italic;
+}
+.mv-card-body {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--silver);
+}
+
+@media (max-width: 1024px) {
+    .mission {
+        padding: 100px 40px;
+        gap: 60px;
+    }
+    .mv-card {
+        padding: 36px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mission {
+        grid-template-columns: 1fr;
+        padding: 80px 24px;
+        gap: 48px;
+    }
+
+    /* Unstick left panel */
+    .mission-left {
+        position: static;
+    }
+
+    /* Hide watermark — bleeds badly when stacked */
+    .mission::before {
+        display: none;
+    }
+
+    .mission-heading {
+        font-size: clamp(32px, 8vw, 44px);
+    }
+
+    .mission-body {
+        font-size: 16px;
+    }
+
+    .mv-card {
+        padding: 32px 24px;
+    }
+
+    .mv-card-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission {
+        padding: 64px 20px;
+    }
+
+    .mv-card {
+        padding: 28px 20px;
+    }
+
+    .mv-card-title {
+        font-size: 20px;
+    }
+
+    .mission-body {
+        font-size: 15px;
+    }
+}

@@ -22,6 +22,8 @@
         <div class="hero-image">
             <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400&q=85&auto=format&fit=crop"
                 alt="Modern corporate office" loading="eager" />
+
+            {{-- This section --}}
             <div class="hero-card">
                 <div class="hero-stat">
                     <div class="hero-stat-n">2<sup>+</sup></div>

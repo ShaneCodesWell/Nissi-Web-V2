@@ -1,0 +1,160 @@
+/* WHY NISSI — differentiators */
+.why {
+    padding: 140px 64px;
+    background: var(--white);
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+}
+.why-left {
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+}
+.why-title {
+    font-family: var(--ff-display);
+    font-size: clamp(44px, 4.5vw, 64px);
+    font-weight: 400;
+    line-height: 1.02;
+    color: var(--ink);
+    margin-top: 24px;
+}
+.why-title em {
+    font-style: italic;
+    color: var(--blue-bright);
+}
+.why-copy {
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--silver);
+}
+
+.why-list {
+    display: flex;
+    flex-direction: column;
+}
+.why-row {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 32px;
+    padding: 48px 0;
+    border-bottom: 1px solid var(--rule);
+    transition: padding-left 0.35s;
+    position: relative;
+}
+.why-row:first-child {
+    border-top: 1px solid var(--rule);
+}
+.why-row::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--blue-bright);
+    transform: scaleY(0);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.why-row:hover {
+    padding-left: 16px;
+}
+.why-row:hover::before {
+    transform: scaleY(1);
+}
+.why-num {
+    font-family: var(--ff-display);
+    font-size: 48px;
+    font-weight: 400;
+    color: rgba(27, 42, 78, 0.07);
+    line-height: 1;
+    transition: color 0.4s;
+}
+.why-row:hover .why-num {
+    color: var(--blue-bright);
+}
+.why-item-title {
+    font-family: var(--ff-display);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 12px;
+    transition: font-style 0.3s;
+}
+.why-row:hover .why-item-title {
+    font-style: italic;
+}
+.why-item-body {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--silver);
+}
+
+@media (max-width: 1024px) {
+    .why {
+        padding: 100px 40px;
+        gap: 60px;
+    }
+    .why-row {
+        grid-template-columns: 56px 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why {
+        grid-template-columns: 1fr;
+        padding: 80px 24px;
+        gap: 48px;
+    }
+
+    /* Unstick left panel */
+    .why-left {
+        position: static;
+    }
+
+    .why-title {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+
+    .why-row {
+        grid-template-columns: 48px 1fr;
+        gap: 20px;
+        padding: 36px 0;
+    }
+    .why-row:hover {
+        padding-left: 12px;
+    }
+
+    .why-num {
+        font-size: 36px;
+    }
+
+    .why-item-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .why {
+        padding: 64px 20px;
+    }
+
+    .why-row {
+        grid-template-columns: 40px 1fr;
+        gap: 16px;
+        padding: 28px 0;
+    }
+
+    .why-num {
+        font-size: 28px;
+    }
+
+    .why-item-title {
+        font-size: 18px;
+    }
+}
