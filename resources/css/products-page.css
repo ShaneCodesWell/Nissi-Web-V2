@@ -737,3 +737,232 @@
     color: var(--white);
     border-color: rgba(255, 255, 255, 0.3);
 }
+
+/* ─── FILTER BAR ─────────────────── */
+@media (max-width: 768px) {
+    .filter-bar {
+        padding: 0 24px;
+    }
+    .filter-btn {
+        padding: 16px 20px;
+        font-size: 9px;
+    }
+}
+
+/* ─── FEATURED PRODUCT PANELS ────── */
+@media (max-width: 1024px) {
+    .pf-content {
+        padding: 64px 40px;
+    }
+    .pf-visual-inner {
+        width: 240px;
+        height: 240px;
+    }
+    .pf-visual-ring:nth-child(3) {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-featured {
+        grid-template-columns: 1fr;
+        min-height: unset;
+    }
+
+    /* Always put content first regardless of light/dark order */
+    .pf-content {
+        padding: 52px 24px 40px;
+        order: 1;
+    }
+    .pf-visual {
+        order: 2 !important; /* override the inline order:-1 on ClockIn */
+        height: 280px;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .light .pf-visual {
+        border-top: 1px solid var(--rule);
+    }
+
+    .pf-name {
+        font-size: clamp(36px, 9vw, 52px);
+    }
+
+    .pf-desc {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .pf-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .btn-pf-primary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pf-visual-inner {
+        width: 200px;
+        height: 200px;
+    }
+    .pf-visual-ring:nth-child(2) {
+        width: 160px;
+        height: 160px;
+    }
+    .pf-visual-ring:nth-child(3) {
+        width: 200px;
+        height: 200px;
+    }
+    .pf-product-num {
+        font-size: 80px;
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+/* ─── COMPACT GRID ───────────────── */
+@media (max-width: 1024px) {
+    .products-compact {
+        padding: 64px 40px 100px;
+    }
+    .compact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Reset Nissi Emails wide card at tablet */
+    .compact-card[id="emails"] {
+        grid-column: span 2 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-compact {
+        padding: 52px 24px 80px;
+    }
+    .compact-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+    .compact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Nissi Emails — collapse the internal 3-col grid to single column */
+    .compact-card[id="emails"] {
+        grid-column: span 1 !important;
+        border-top: none !important;
+    }
+    .compact-card[id="emails"] > div {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+
+    .compact-card {
+        padding: 36px 24px;
+    }
+    .cc-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-compact {
+        padding: 48px 20px 64px;
+    }
+    .compact-card {
+        padding: 28px 20px;
+    }
+}
+
+/* ─── COMPARISON TABLE ───────────── */
+@media (max-width: 1024px) {
+    .comparison {
+        padding: 80px 40px 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comparison {
+        padding: 64px 24px 80px;
+    }
+
+    /* Make table horizontally scrollable */
+    .comparison-inner {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .comparison-inner::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Since the HTML has no .comparison-inner wrapper, 
+       wrap the table in overflow on the section itself */
+    .comparison {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .comp-table {
+        min-width: 600px; /* force horizontal scroll rather than squishing */
+    }
+
+    .comp-table th,
+    .comp-table td {
+        padding: 14px 16px;
+        font-size: 12px;
+    }
+    .comp-table td:first-child {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comp-table {
+        min-width: 520px;
+    }
+}
+
+/* ─── PRODUCTS CTA ───────────────── */
+@media (max-width: 1024px) {
+    .products-cta {
+        padding: 100px 40px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-cta {
+        grid-template-columns: 1fr;
+        padding: 80px 24px;
+        gap: 40px;
+    }
+
+    .pcta-title {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+
+    .pcta-desc {
+        font-size: 15px;
+    }
+
+    .pcta-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .btn-fill,
+    .btn-outline-light {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-cta {
+        padding: 64px 20px;
+    }
+}

@@ -2,10 +2,10 @@
     <!-- ── HERO ── -->
     <section class="hero">
         <div class="hero-content">
-            <a href="{{ route('home') }}" class="page-breadcrumb">
+            {{-- <a href="{{ route('home') }}" class="page-breadcrumb">
                 ← <span class="sep">/</span> Nissi Technologies <span class="sep">/</span> <span
                     class="current">Products</span>
-            </a>
+            </a> --}}
             <h1 class="hero-h1">
                 Our <em>products</em><br>in full
             </h1>

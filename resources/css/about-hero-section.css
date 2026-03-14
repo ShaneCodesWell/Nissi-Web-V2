@@ -232,3 +232,111 @@
     border-radius: 50%;
     background: var(--blue-bright);
 }
+
+@media (max-width: 1024px) {
+    .ah-content {
+        padding: 140px 40px 100px 40px;
+    }
+    .ah-bar {
+        padding: 20px 40px;
+        gap: 24px;
+    }
+    .ah-year-badge {
+        bottom: 32px;
+        left: 32px;
+        padding: 16px 22px;
+    }
+    .ah-year-badge-n {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        min-height: 100svh;
+    }
+
+    /* Hide chevron shape when stacked */
+    .ah-content::after {
+        display: none;
+    }
+
+    .ah-content {
+        padding: 120px 24px 48px;
+        order: 1;
+    }
+
+    .ah-h1 {
+        font-size: clamp(36px, 9vw, 52px);
+    }
+
+    .ah-sub {
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 36px;
+    }
+
+    /* Stats grid stays 3 col but compress padding */
+    .ah-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .ah-stat {
+        padding: 14px 16px;
+    }
+    .ah-stat-n {
+        font-size: 26px;
+    }
+    .ah-stat-l {
+        font-size: 8px;
+    }
+
+    /* Image panel becomes fixed height banner */
+    .ah-visual {
+        order: 2;
+        height: 320px;
+        border-left: none;
+        border-top: 1px solid var(--rule);
+    }
+
+    /* Scale down year badge */
+    .ah-year-badge {
+        bottom: 16px;
+        left: 16px;
+        padding: 12px 18px;
+    }
+    .ah-year-badge-n {
+        font-size: 28px;
+    }
+    .ah-year-badge-l {
+        font-size: 8px;
+    }
+
+    /* Fix bar — full width, scrollable */
+    .ah-bar {
+        width: 100%;
+        padding: 14px 24px;
+        gap: 16px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .ah-bar::-webkit-scrollbar {
+        display: none;
+    }
+    .ah-bar-item {
+        font-size: 9px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .ah-content {
+        padding: 100px 20px 40px;
+    }
+    .ah-stat-n {
+        font-size: 22px;
+    }
+    .ah-stat {
+        padding: 12px;
+    }
+}
