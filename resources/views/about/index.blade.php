@@ -237,7 +237,7 @@
                     <div class="tc-initials"><span>CEO</span></div>
                 </div>
                 <div class="tc-info">
-                    <div class="tc-name">Moses Adonoo</div>
+                    <div class="tc-name">Chief Executive Officer</div>
                     <div class="tc-role">Founder & CEO</div>
                     <p class="tc-bio">
                         The vision behind Nissi — setting strategy, forging partnerships,
